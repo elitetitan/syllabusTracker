@@ -1,0 +1,10 @@
+{% extends 'tracker/layout.html' %}
+
+{% block content %}
+<center>{{title}}</center>
+{% for student in students %}
+<ul>
+  <li>{{student.name}} - {{student.roll_no}} : {{student.group_no}}</li> 
+</ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+        body{
+            font: 14px verdana; 
+            margin: 0px;
+        }
+        .header{
+            padding: 12px 0;
+            background-color: #daf7a6; 
+        }
+        .header h1{
+            font-size: 22px; 
+            margin: 10px;
+        }
+        .container{
+            width: 100%;
+            background-color: #eee; 
+        }
+        .sidebar{
+            float: left; 
+            width: 20%; 
+            min-height: 500px;
+            background-color: #aaa;
+        }
+        .sidebar .nav{
+            padding: 10px;
+        }
+        .nav ul{
+            list-style: none; 
+            padding: 0px; 
+            margin: 0px;
+        }
+        .nav ul li{
+            margin-bottom: 5px; 
+        }
+        .nav ul li a{
+            color: #daf7a6;
+        }
+        .nav ul li a:hover{
+            text-decoration: none;
+        }
+        .content{
+            float: left;
+            width: 80%;
+            min-height: 500px;
+        }
+        .content .section{
+            padding: 10px;
+        }
+        .content h2{
+            font-size: 18px; 
+            margin: 0px;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .footer{
+            background-color: #daf7a6; 
+            padding: 10px 0;
+        }
+        .footer p{
+            text-align: center; 
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Syllabus Tracker</h1>
+        </div>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="section">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="footer">
+            <p>For any assistance, contact asaini_be16@thapar.edu</p>
+        </div>
+    </div>
+</body>
+</html>

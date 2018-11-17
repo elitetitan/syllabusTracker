@@ -1,0 +1,10 @@
+{% extends 'tracker/layout.html' %}
+
+{% block content %}
+<center>{{title}}</center>
+{% for teacher in teachers %}
+<ul>
+  <li>{{teacher.name}} - {{teacher.tid}} : {{teacher.group_no}}</li> 
+</ul>
+{% endfor %}
+{% endblock %}
