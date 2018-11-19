@@ -20,5 +20,6 @@ urlpatterns = [
     path('',include('authenticate.urls')),
     path('admin/', admin.site.urls),
     path('tracker/',include('tracker.urls')),
-    path('syllabus/',include('draft.urls'))
+    path('syllabus/',include('draft.urls')),
+    path('announcements/',include('announcements.urls'))
 ]

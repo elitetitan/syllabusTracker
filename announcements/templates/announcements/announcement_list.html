@@ -1,0 +1,11 @@
+{% extends 'tracker/layout.html' %}
+
+{% block content %}
+<center>{{title}}</center>
+
+{% for i in announcements %}
+<ul>
+  <li>{{i.title}} - {{i.announcement}} : {{i.published_at}}</li> 
+</ul>
+{% endfor %}
+{% endblock %}
