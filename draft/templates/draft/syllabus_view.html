@@ -1,0 +1,14 @@
+{% extends 'tracker/layout.html' %}
+
+{% block content %}
+<center>{{title}}</center>
+<ul>
+    <li>S.No - Topics - Lectures</li>
+</ul>
+{% for i in syllabus %}
+
+<ul>
+  <li>{{i.sno}} - {{i.topic}} : {{i.lecture_no}}</li> 
+</ul>
+{% endfor %}
+{% endblock %}
